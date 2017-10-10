@@ -25,7 +25,7 @@ public class Robot extends IterativeRobot {
 	Joystick stick = new Joystick(Constants.kJoystickPort); ////create instance of joystick
 	Joystick steeringWheel = new Joystick(Constants.kSteeringWheelPort);   //create instance of steering wheel
 	String autoSelected;
-	SendableChooser<String> chooser = new SendableChooser<>();
+	SendableChooser<String> chooser = new SendableChooser<>(); //-∞/10
 
 	@Override
 	public void robotInit() {
