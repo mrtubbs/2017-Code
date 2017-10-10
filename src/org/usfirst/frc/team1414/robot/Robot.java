@@ -36,25 +36,28 @@ public class Robot extends IterativeRobot {
 	}
 
 	@Override
-	public void autonomousInit() {
-		autoSelected = chooser.getSelected();
+	public void autonomousInit() { //init for autonomus modew
+		autoSelected = chooser.getSelected(); //select something
 		// autoSelected = SmartDashboard.getString("Auto Selector",
 		// defaultAuto);
-		System.out.println("Auto selected: " + autoSelected);
+		System.out.println("Auto selected: " + autoSelected); //print out information
 	}
 
 	/**
 	 * This function is called periodically during autonomous
 	 */
-	@Override
-	public void autonomousPeriodic() {
-		switch (autoSelected) {
+	@Override //useless function
+	public void autonomousPeriodic() { //start of automatic periodic
+		
+		switch (autoSelected) { //switch case
 		case customAuto:
 			// Put custom auto code here
+			//empty code
 			break;
 		case defaultAuto:
 		default:
-			// Put default auto code here
+			// Put default auto code here 
+			//empty code
 			break;
 		}
 	}
@@ -67,9 +70,9 @@ public class Robot extends IterativeRobot {
 		
 		
 		//drive.control(steeringWheel);
-		drive.outputToSmartDashboard();
-		shooter.outputToSmartDashboard();
-		
+		drive.outputToSmartDashboard(); //get output to smart dashboard
+		shooter.outputToSmartDashboard(); //get output to smart dashboard
+		//set variables
 		if (steeringWheel.getRawButton(9)) {
 			drive.setHighGear(false);
 		}
@@ -112,7 +115,7 @@ public class Robot extends IterativeRobot {
 	/**
 	 * This function is called periodically during test mode
 	 */
-	@Override
+	@Override //no thing
 	public void testPeriodic() {
 	}
 }
@@ -128,6 +131,7 @@ public class Robot extends IterativeRobot {
 
 
 /**
+ * Comments by FABIAN BLANK - THE MOST USEFULL PERSON IN THE RUM
  * Copyright IHOT Team 1414
  * Powered by the amazing SAVAGE (System Architecture Vulnerability Analyst and Generic Engineer) Maanit Madan :)
 **/
