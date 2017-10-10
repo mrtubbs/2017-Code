@@ -14,16 +14,16 @@ import com.ctre.CANTalon;
 
 
 public class Robot extends IterativeRobot {
-	final String defaultAuto = "Default";
-	final String customAuto = "My Auto"; 
-	Drive drive = new Drive();
-	Intake intake = new Intake();
-	Shooter shooter = new Shooter();
-	Climber climber = new Climber();
-	LoadingPanel loadingPanel = new LoadingPanel();
+	final String defaultAuto = "Default"; //drive mode
+	final String customAuto = "My Auto";  //vehicle definition
+	Drive drive = new Drive(); //create instance of drive
+	Intake intake = new Intake(); //create instance of intake
+	Shooter shooter = new Shooter(); //create instance of shooter
+	Climber climber = new Climber(); //create instance of climber
+	LoadingPanel loadingPanel = new LoadingPanel();  ////create instance of loading panel
 	
-	Joystick stick = new Joystick(Constants.kJoystickPort);
-	Joystick steeringWheel = new Joystick(Constants.kSteeringWheelPort); 
+	Joystick stick = new Joystick(Constants.kJoystickPort); ////create instance of joystick
+	Joystick steeringWheel = new Joystick(Constants.kSteeringWheelPort);   //create instance of steering wheel
 	String autoSelected;
 	SendableChooser<String> chooser = new SendableChooser<>();
 

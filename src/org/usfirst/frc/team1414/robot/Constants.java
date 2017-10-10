@@ -4,6 +4,7 @@ import jaci.pathfinder.Waypoint;
 
 
 public class Constants {
+	//defining random variables
 
 	// CAN IDs
 	public static final int kLeftDriveMasterId = 4;
